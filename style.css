@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+  background: black;
+}
+
+.Cont{
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  place-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.Text{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Containt{
+  height: 200px;
+  width: 200px;
+  background: none;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.Load{
+  height: 150px;
+  width: 150px;
+  background: none;
+  border-right: 3px solid white;
+  border-radius: 50%;
+  animation: Anim 1.80s linear infinite;
+}
+
+@keyframes Anim{
+  0%{
+    transform: rotate(0deg);
+  }
+  
+  100%{
+    transform: rotate(360deg);
+  }
+}
